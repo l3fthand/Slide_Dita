@@ -1,0 +1,62 @@
+.container{
+    width: 75em;
+    margin: auto;
+}
+.header{
+    height:8em;
+    border: thin red solid;
+}
+.hero{
+    display: flex;
+    height:40em;
+    border: thin red solid;
+}
+.left{
+    flex:0 0 60%;
+    border: thin red solid;
+    position: relative;
+}
+.left>i{
+    position: absolute;
+    top:25%;
+    font-size: 2em;
+    color: grey;
+}
+.fa-caret-right{
+    right:-.5%;
+}
+.main{
+    height: 20em;
+    margin-left: 1em;
+}
+.main>div{
+    position: relative;
+}
+.main>div>img{
+    position: absolute;
+}
+.current{
+    z-index: 100;
+}
+.slider{
+    display: flex;
+    border: thin red solid;
+    justify-content: center;
+    width: 43em;
+    margin-left: 1em;
+
+}
+.slider>.slider-current {
+    opacity: 1;
+}
+.slider>img{
+    opacity: .5;
+    margin-left: .1em;
+}
+
+.right{
+    flex:0 0 40%;
+}
+.about{
+    margin-left: 1em;
+}
