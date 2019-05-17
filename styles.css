@@ -4,46 +4,61 @@
 }
 .header{
     height:8em;
-    border: thin red solid;
 }
 .hero{
     display: flex;
     height:40em;
-    border: thin red solid;
+   
 }
 .left{
     flex:0 0 60%;
-    border: thin red solid;
     position: relative;
 }
 .left>i{
     position: absolute;
     top:25%;
-    font-size: 2em;
+    font-size: 3em;
     color: grey;
+    opacity:.2;
+    transform: translateY(-50%)
+    
+}
+.left>i:hover{
+    opacity: 1;
+    transition: all ease .8s;
+    
+   
 }
 .fa-caret-right{
-    right:-.5%;
+    right:-5%;
 }
 .main{
     height: 20em;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 .main>div{
     position: relative;
+    
 }
-.main>div>img{
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6{
     position: absolute;
+    opacity:0;
+    transition: all ease .8s;
+    pointer-events: none;
+    
 }
 .current{
-    z-index: 100;
+    opacity:1;
+    pointer-events: auto;
+
+    
 }
 .slider{
     display: flex;
-    border: thin red solid;
     justify-content: center;
     width: 43em;
     margin-left: 1em;
+    margin-top:.5em;
 
 }
 .slider>.slider-current {
@@ -52,11 +67,63 @@
 .slider>img{
     opacity: .5;
     margin-left: .1em;
+    transition: all ease .8s;
 }
 
 .right{
     flex:0 0 40%;
+    margin-left:3em;
 }
 .about{
     margin-left: 1em;
 }
+
+.color>img{
+    border-bottom:thin white solid;
+    transition: all ease 0.2s;
+}
+
+.color>.color-current{
+    border-bottom: thin grey solid;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.tab1,.tab2,.tab3{
+    opacity: 0.5;
+}
+.tabtext1,.tabtext2,.tabtext3{
+    display: none;
+}
+.tabtext>.tabtext-current{
+    display: block;
+}
+
+.tabtext-current{
+    /* background-color:#f9f9f9;
+    border-radius:3px;
+    box-shadow: 3px 6px 5px -1px rgba(189,189,189,1); */
+}
+.tab-current{
+    opacity: 1;
+    
+}
+
+
+
+
+/*Transition effects------------------------------------------------------------**/
+
+.slow{
+    transition: all ease-in 3s;    
+}
+
+.fast{
+    transition: all ease 1s;
+}
+
+
+
