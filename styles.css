@@ -100,6 +100,10 @@
 }
 .tabtext>.tabtext-current{
     display: block;
+    height: 17em;
+}
+.tabtext2>p{
+    text-transform: lowercase;
 }
 
 .tabtext-current{
@@ -111,7 +115,12 @@
     opacity: 1;
     
 }
-
+form>button{
+    font-size: 1em;
+    color: white;
+    background-color: black;
+    border: none;
+}
 
 
 
